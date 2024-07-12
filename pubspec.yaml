@@ -78,7 +78,13 @@ flutter:
     - assets/tn3.jpg
     - assets/tn4.jpg
     - assets/zara1.jpg
-    - assets/zara2.jpg
+    - assets/zara2.jpg 
+    - assets/zara4.jpg
+    - assets/zara5.jpg
+    - assets/zara6.jpg
+    - assets/zara7.jpg
+    - assets/zara8.jpg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

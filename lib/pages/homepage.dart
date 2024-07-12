@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  //search bar
+                  
                   const SizedBox(
                     width: 330,
                     child: TextField(
@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               const SizedBox(
-                height: 20,
+                height: 10,
               ),
 
               SizedBox(
@@ -201,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                       ))),
 
               const SizedBox(
-                height: 20,
+                height: 10,
               ),
               //all , shoes , t-shirts , pants , jackets
               SizedBox(
@@ -355,7 +355,7 @@ class _HomePageState extends State<HomePage> {
                     height: 200,
                     decoration: BoxDecoration(
                       image: const DecorationImage(
-                        image: AssetImage("assets/zara1.jpg"),
+                        image: AssetImage("assets/zara4.jpg"),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -366,7 +366,7 @@ class _HomePageState extends State<HomePage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                             Text("T-Shirt",
+                             Text("Jacket",
                             style: TextStyle(
                               color: Color.fromARGB(255, 189, 189, 189),
                               fontSize: 15,
@@ -403,16 +403,60 @@ class _HomePageState extends State<HomePage> {
                   ],
 
                  ),
-                  Container(
+                  Column(
+                    children: [
+                      Container(
                     width: 150,
                     height: 200,
                     decoration: BoxDecoration(
                       image: const DecorationImage(
-                        image: AssetImage("assets/zara2.jpg"),
+                        image: AssetImage("assets/nike1.jpg"),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
+                  ),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                             Text("T-shirt",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 189, 189, 189),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            ),
+                            Text("Nike...",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            ),
+                           
+                            
+
+                          ],
+                          
+
+                        ),
+                        const SizedBox(width: 50,),
+                        Text("120 \$ ",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            ),
+                      ],
+                    ),
+                  const  SizedBox(
+                      height: 10,
+                    )
+                    ],
                   ),
                 ],
               )
@@ -426,7 +470,7 @@ class _HomePageState extends State<HomePage> {
           duration: const Duration(milliseconds: 100),
 
             tabs: 
-          [
+         const [
             GButton(
               icon: Icons.home,
               text: 'Home',
@@ -451,6 +495,7 @@ class _HomePageState extends State<HomePage> {
             });
           },
           ),
+
     );
   }
 }
