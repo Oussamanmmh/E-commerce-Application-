@@ -23,6 +23,7 @@ class _ImageNavState extends State<ImageNav> {
   Widget build(BuildContext context) {
     return  Padding(padding:EdgeInsets.all(4),
     child:  Column(
+       
       children: [
         Container(
           width: 300,
@@ -88,10 +89,31 @@ class _ImageNavState extends State<ImageNav> {
             ),
             Text('120\$',style: TextStyle(fontWeight: FontWeight.bold , fontSize: 15)),
           ],
+        ),
+        const SizedBox(height: 5,),
+        const Text("Oversize jacket made of technical fabric. High collar and long sleeves with pocket detail.", 
+        style: TextStyle(color: Colors.grey),),
+        const SizedBox(height: 20,),
+        const Text("Size",style: TextStyle(fontWeight: FontWeight.bold , fontSize: 20), textAlign: TextAlign.start,),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            OutlinedButton(onPressed: (){}, 
+            style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.black87 )
+            ),
+            child:const Text("S" ,style: TextStyle(color: Colors.white),) ),
+            OutlinedButton(onPressed: (){}, 
+            child:const Text("M" ,style: TextStyle(color: Colors.black),) ),
+            OutlinedButton(onPressed: (){}, 
+            child:const Text("L",style: TextStyle(color: Colors.black),) ),
+            OutlinedButton(onPressed: (){}, 
+            child:const Text("Xl",style: TextStyle(color: Colors.black),) )
+          ],
         )
-        
 
       ],
+      
     )
     );
   }

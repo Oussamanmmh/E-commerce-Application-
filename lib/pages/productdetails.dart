@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/pages/imagesNav.dart';
+import 'package:my_app/widgets/bottomnavigProd.dart';
 
 class ProductDetails extends StatelessWidget {
   const ProductDetails({super.key});
@@ -55,6 +56,7 @@ class ProductDetails extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar:const BottmNavPro(),
     );
   }
 }
