@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomePage extends StatefulWidget {
@@ -417,6 +418,39 @@ class _HomePageState extends State<HomePage> {
               )
             ],
           )),
+          bottomNavigationBar: GNav(
+          rippleColor: Colors.grey[300]!,
+          hoverColor: Colors.grey[100]!,
+          iconSize:30,
+          
+          duration: const Duration(milliseconds: 100),
+
+            tabs: 
+          [
+            GButton(
+              icon: Icons.home,
+              text: 'Home',
+            ),
+            GButton(
+              icon: Icons.search,
+              text: 'Search',
+            ),
+            GButton(
+              icon: Icons.shopping_cart,
+              text: 'Cart',
+            ),
+            GButton(
+              icon: Icons.person,
+              text: 'Profile',
+            ),
+          ],
+          selectedIndex: 0, 
+          onTabChange: (index){
+            setState(() {
+             // _pageController.jumpToPage(index);
+            });
+          },
+          ),
     );
   }
 }
